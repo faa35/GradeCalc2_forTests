@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="GradeCalculator.css">
+</head>
+<body>
+    <div class="c-1">
+        <div class="container">
+            <h1>Grade Calculator</h1>
+            <div class="activities_result">
+    
+                <div class="activities">
+                    <h2 class="activities-heading">Activities</h2>
+                    <p>Give grades to the numeric activities:</p>
+                    <div class="table-wrapper">
+                        <table >
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Short Name</th>
+                                    <th>Weight</th>
+                                    <th>Grade</th>
+                                    <th>Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody id="activitiesTable">
+                                <tr>
+                                    <td>Activity 1</td>
+                                    <td>A1</td>
+                                    <td><input type="number" name="weight" class="weight" /></td>
+                                    <td><input type="number" name="grade" class="grade" /> / <input type="number" name="maxGrade" class="maxGrade" /></td>
+                                    <td><span class="percent"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button id="addRow">ADD ROW</button>
+                </div>
+                <div class="result">
+                    <p class="result_text" id="resultText">Result</p>
+                    <div class="wm_btn">
+                        <button class="btn" id="weighted">WEIGHTED</button>
+                        <button class="btn" id="mean">MEAN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="GradeCalculator.js" defer></script>
+</body>
+</html>
